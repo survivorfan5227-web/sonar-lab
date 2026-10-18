@@ -22,7 +22,7 @@ def main():
 
 def multiply(a,b):
     result=a*b
-    unused_var = 100
+    unused_var = 99
     return result
 
 if __name__ == "__main__":
