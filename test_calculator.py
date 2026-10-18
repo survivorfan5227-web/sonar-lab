@@ -26,3 +26,13 @@ def test_average_empty():
 def test_multiply():
     assert multiply(3, 4) == 12
     assert multiply(5, 0) == 0
+
+def test_main(capsys):
+    from calculator import main
+
+    main()
+    captured = capsys.readouterr()
+
+    assert "Average:" in captured.out
+    assert "Division:" in captured.out
+    assert "Multiplication:" in captured.out
